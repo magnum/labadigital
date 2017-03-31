@@ -13,13 +13,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="full-width-page-wrapper">
 
-	<div class="<?php echo esc_html( $container ); ?>" id="content">
+
 
 		<div class="row">
 
 			<div class="col-md-12 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
+
+
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
@@ -42,8 +44,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</div><!-- .row end -->
 
-	</div><!-- Container end -->
+		<footer>
+			<div class="copyright">
+				<div class="line"></div>
+				<p>&copy; 2015/16 LABA - Libera Accademia di Belle Arti</p>
+			</div>
+		</footer>
+
+
+
 
 </div><!-- Wrapper end -->
-
-<?php get_footer(); ?>

@@ -23,7 +23,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
-					<div class="site-info">
+
+					<div class="site-info hidden">
 						<a href="<?php echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
 						<span class="sep"> | </span>
 						<?php printf( // WPCS: XSS ok.
