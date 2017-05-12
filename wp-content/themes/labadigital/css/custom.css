@@ -23,12 +23,6 @@ h1 {
 @font-face {
   font-family: myH1;
   src: url(font/linotte-bold.otf); }
-h2 {
-  font-family: 'myH2', sans-serif;
-  font-size: 40px;
-  color: #FBFF00;
-  letter-spacing: 4.16px; }
-
 @font-face {
   font-family: myH2;
   src: url(font/linotte-semibold.otf); }
@@ -42,62 +36,11 @@ h6 {
 @font-face {
   font-family: myH6;
   src: url(font/linotte-semibold.otf); }
-p {
-  font-family: 'myP', sans-serif;
-  color: #ffffff;
-  font-size: 15px;
-  letter-spacing: 1.3px;
-  line-height: 35px; }
-
 @font-face {
   font-family: myP;
   src: url(font/robotoslab-regular.ttf); }
-/* NAVIGATION */
-#nav {
-  width: 100%; }
-
-#nav img {
-  position: relative;
-  width: 350px;
-  left: 50%;
-  margin-left: -170px;
-  margin-top: 70px; }
-
-#nav ul {
-  list-style-type: none;
-  width: 1200px;
-  left: 50%;
-  margin-left: -600px;
-  position: relative;
-  text-align: center;
-  padding: 80px 0 0 0; }
-
-#nav ul li {
-  font-family: 'myFont', sans-serif;
-  font-size: 16px;
-  color: #06E69D;
-  letter-spacing: 0.84px;
-  line-height: 24px;
-  display: inline-block;
-  border: 6px solid #FBFF00;
-  border-radius: 5px;
-  padding: 20px 10px 20px 10px;
-  margin: 10px;
-  width: 120px; }
-
-@font-face {
-  font-family: myFont;
-  src: url(font/linotte-semibold.otf); }
-#nav ul li:hover {
-  background-color: #FBFF00; }
-
-#nav a {
-  color: #FBFF00;
-  text-decoration: none;
-  margin: 0; }
-
-#nav a:hover {
-  color: #00F7AA; }
+.entry-content .paragraph-two ul {
+  color: #fff; }
 
 /* INTRO */
 h1 {
@@ -182,5 +125,57 @@ footer .copyright {
     width: 300px; } }
 .hidden {
   display: none; }
+
+.entry-content, footer {
+  color: #fff; }
+
+.entry-content {
+  font-family: 'myP', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1.3px;
+  line-height: 35px; }
+  .entry-content h2 {
+    font-family: 'myH2', sans-serif;
+    font-size: 40px;
+    color: #FBFF00;
+    letter-spacing: 4.16px; }
+
+/* NAVIGATION */
+#nav {
+  width: 100%; }
+  #nav ul, #nav li {
+    margin: 0;
+    padding: 0; }
+  #nav img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px; }
+  #nav .menu-labadigital-container {
+    height: 100px;
+    text-align: center; }
+    #nav .menu-labadigital-container ul {
+      display: inline-block; }
+      #nav .menu-labadigital-container ul li a {
+        display: inline-block;
+        /*  */
+        font-family: 'myFont', sans-serif;
+        font-size: 16px;
+        color: #06E69D;
+        letter-spacing: 0.84px;
+        line-height: 24px;
+        border: 6px solid #FBFF00;
+        border-radius: 5px;
+        padding: 20px 10px 20px 10px;
+        margin: 10px;
+        width: 120px; }
+        #nav .menu-labadigital-container ul li a:hover {
+          background-color: #FBFF00;
+          color: #FBFF00;
+          text-decoration: none; }
+@font-face {
+  #nav .menu-labadigital-container ul {
+    font-family: myFont;
+    src: url(font/linotte-semibold.otf); } }
 
 /*# sourceMappingURL=custom.css.map */

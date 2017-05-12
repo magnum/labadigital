@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 @import 'original';
 
 .hidden {
@@ -6,5 +7,81 @@
 }
 
 body {
+
+}
+
+.entry-content, footer {
+  color: $color_light;
+}
+
+
+.entry-content {
+  font-family: 'myP', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1.3px;
+  line-height: 35px;
+
+  h2{
+    font-family: 'myH2', sans-serif;
+    font-size: 40px;
+    color: $color1;
+    letter-spacing: 4.16px;
+  }
+}
+
+
+
+/* NAVIGATION */
+
+#nav{
+  width: 100%;
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+    @include margin-auto();
+    padding: $spacer*2;
+  }
+
+  .menu-labadigital-container {
+    height: 100px;
+    text-align: center;
+
+    ul{
+      display: inline-block;
+      li{
+
+        a {
+          display: inline-block;
+          /*  */
+          font-family: 'myFont', sans-serif;
+          font-size: 16px;
+          color: #06E69D;
+          letter-spacing: 0.84px;
+          line-height: 24px;
+          border: 6px solid #FBFF00;
+          border-radius: 5px;
+          padding: 20px 10px 20px 10px;
+          margin: 10px;
+          width: 120px;
+
+
+          &:hover {
+            background-color: $color1;
+            color: #FBFF00;
+            text-decoration: none;
+          }
+        }
+      }
+      @font-face {
+        font-family: myFont;
+        src: url(font/linotte-semibold.otf);
+      }
+
+    }
+  }
 
 }
