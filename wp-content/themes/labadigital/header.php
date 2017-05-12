@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    <!-- MAIN CONTENT -->
 	    <div class="container">
 				<div id="nav">
-					<a href="index.html"><img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="corso di web design"></a>
+					<a href="<?php print site_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="corso di web design"></a>
 
 				<?php wp_nav_menu(array(
 
