@@ -1,0 +1,12 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /laba/biennio/molinari_antonio/secondo/labadigital/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /laba/biennio/molinari_antonio/secondo/labadigital/index.php [L]
+</IfModule>
+
+# END WordPress
